@@ -26,14 +26,14 @@ docker pull murthyadapa/lamp-stack
 ### volumes
 - /var/www/html  (Apache root directory)
 
-###To create a container
+### To create a container
 
 ```
 docker run -it --rm  murthyadapa/lamp-stack
 ```
 
 
-###To run a web application in a container
+### To run a web application in a container
 
 ```
 docker run --rm -p 8080:80 -v /path/web-application:/var/www/html  murthyadapa/lamp-stack
